@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4_y0fFtkGf14Be_BGGOiRTGn9XIKygbcvg&usqp=CAUps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShUAV9EGaPGy62X-Zv5OCenVuz7IdexVzlEg&usqp=CAUs://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNGoG7GvUbUpUpHQHid0MubW-5K1Ekyn_4lQ&usqp=CAUg/bg.data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QDw0PEhAQDxAPDQ0PDw8PDQ8PDxAPFREWFhURFRUYHSggGBolHR8VITEhJSk3Li4uFx8zODMtNzEtLisBCgoKDQ0OGg0PFSsZFRkrNystKy0rLS0rLS0rKzcrKysrKysrKysrLSsrLSsrKysrKysrKysrKystKysrKysrLf/AABEIAKkBKgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAgEDBf/EAB8QAQEBAQADAAIDAAAAAAAAAAARAgFxkbExURITQf/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgUD/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwDxoRUXnMdmveGcxmsLEpHCEddZRFpEwioQpEx0zmNzmKSkRrDnHdOslI5QioRasTCKi85hUjM5hrCxKRwhHXWURaRMIqEKRMdM5jc5ikpEaxXOO6dZKRyhFQi1YmEVF5zCpGZzDWasSjhCOus1EWkTCKhCkTFf1rzmKSkZzjQZrUAAgzvGhSIiucUwpAAIABGd4mLb9KRPONApAAIM7xoUiIrnFfWFIABAAIzvExbfpSJ5xoFIABBneNCkRFc4r6wpAAI3vEujO8ZbiAaJBsbzjRYmHeKAjmL7xAkAXzgRkIoFiYl0Z3gRAAkFRvONFiYRQEcxfeIEgC+cCMhFAsTEujO8CIAEgqN5xosTCKAjmL7xAkdSKIzW4jWb+Pz9M5jvnMZrJSOQoKRIoKRMZrN8/Vx0zmFI4ZzGuusohSJFBSJIohSI1m+fpnM8u+cxmslI5QVApEigpExms3z9XHTOYUjhnM8tjrrKIUiRQUiSKIUiNZvn6ZzPLvnLNZKRygqBSJFBSJjWxX8CkIvnDnGs1oASkTrKY6M7xaIhFRvOFDnGglIJ1lQUc4RfeMi0TF84c40oAJSJ1lMdGd4tEQio3nCjOcUCUgnWVBRzhF94yLRMVzLecaUAEpE6ymOjO8WiIRUbzhRmeKBKArvEs1qABQBUCMntjY3vFIkBKABQbPbYyKRgrvEoQAKAKgRk9sbGxSJASgAUGz22MikYKiUIAFAFQIye2NjYpEgJRcZ3K4RG45C9ZbnMRIzmSKhFWJhFQhSI7lLrE6yiRC+ZbnMbFWJhFQhSJjO5XCBHIdNZM5iJGcyRUIqxMIqEKRHcpdYzWUSOa+ZbnMbFWJhFQhSJh3KoQI5DprNM5iJGcyRUIqxMIqEKRPcodYBFEVFc4xWmZ4ayoKjkOncphVSKhCiYvPG840qJ1lDqzuSjmKhFqpFRXOJRmeGsqCo5Dp3KYVUioQoleeN5xpUTrKHVnclHMVCFVIqK5wozOTWVBUch07xMKqRUItEq/irmWpUZxoM1qABSDO8aFIyEVGFWABUgAUjO8I1sKsTzjQKkACkGd40KRkIqe2FWABUgAUjO8I1s9lWJjQKkACkGRoUjIc4qe2FWABUiu8S6M1lluIAEFc43mWixJ3igpHMXrKAgC+ZCM5wUFWJ7xLozWRIgAQVzjc5aLEneKCkcxesoCAL5kIznCKCrE94l0ZrIkQAIK5xuctFiYd4oKRzF6ygI7QjRltGsfozl1x+WdEiYRoKyEaAyJ1j9LVj8ia5ZyqK7/rAZCNBWQjQEayZysEjIRoKyEaAyJ1lYIjOVRoDIRoKyEaAjWTOVgkZCNBWQjQGQjQR//9k=jpg') no-repeat center;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .login-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 80px 40px 40px;
+    background: rgba(13, 73, 66, 0.7);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  }
+  .form::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255, 0.08);
+    transform: skewX(-26deg);
+    transform-origin: bottom left;
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  .form img {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    width: 100px;
+    background: rgba(255,255,255, 0.8);
+    border-radius: 50%;
+  }
+  .form h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: #b51f1f;
+  }
+  .form .input-group {
+    position: relative;
+  }
+  .form .input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+  }
+  .form .input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .3s ease-out;
+  }
+  .form .input-group input:focus + label,
+  .form .input-group input:valid + label {
+    transform: translateY(-18px);
+    color: #b51f1f;
+    font-size: .8rem;
+  }
+  .submit-btn {
+    display: block;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background: #b51f1f;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .forgot-pw {
+    color: inherit;
+  }
+  
+  #forgot-pw {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    z-index: 1;
+    background: #fff;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  #forgot-pw:target {
+    height: 100%;
+    opacity: 1;
+  }
+  .close {
+    position: absolute;
+    right: 1.5rem;
+    top: 0.5rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: inherit;
+  }
